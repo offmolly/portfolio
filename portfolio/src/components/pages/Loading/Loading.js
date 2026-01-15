@@ -20,7 +20,7 @@ function Loading(props) {
       <motion.div  exit={{opacity:0,transition:{duration:0.2}}}  className='page' id='loading'>
         <div className='loading-main'>
           <div className="ld-lg-div">
-            <motion.img style={{opacity:opacity1}}  transition={{ease:'linear',duration:0.2}} className="ld-lgo" src={`${process.env.PUBLIC_URL}static/images/logo.svg`} alt="" />
+            <motion.img style={{opacity:opacity1}}  transition={{ease:'linear',duration:0.2}} className="ld-lgo" src={`${process.env.PUBLIC_URL}/static/images/logo.svg`} alt="" />
           </div>
         </div>  
     </motion.div>

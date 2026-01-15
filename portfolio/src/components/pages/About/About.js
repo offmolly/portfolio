@@ -115,7 +115,7 @@ function About(props) {
             <motion.div style={{opacity:mailOpacity,scale:mailScale}} className='f-h'>
                 <Link to={'mailto:pranayrpublic@gmail.com'} target={'_blank'} style={{zIndex:'3',display:'flex',justifyContent :'center',alignItems:'center'}}>
                     <button className='p-[20px] px-[38px]' tabIndex={0} id='mailme'>
-                        <img className='object-contain h-[32px]' src={`${process.env.PUBLIC_URL}'/static/images/mail.svg`} alt='mail-button'></img>
+                        <img className='object-contain h-[32px]' src={`${process.env.PUBLIC_URL}/static/images/mail.svg`} alt='mail-button'></img>
                     </button>
                 </Link>
             </motion.div>
