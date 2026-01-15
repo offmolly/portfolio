@@ -29,7 +29,7 @@ export default function Home(props) {
   return (
       <motion.section ref={homeRef} className='page' id="home">
         <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2,ease:'circInOut'}}}className='noise'>
-        <img className='noise-image' src={`${process.env.PUBLIC_URL}/static/images/Noise.png`} alt="noise filter"/>
+        <img className='noise-image' src={`${process.env.PUBLIC_URL}/static/images/noise.png`} alt="noise filter"/>
       </motion.div>
       
           <div className='home-head'>
