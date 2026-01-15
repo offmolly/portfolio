@@ -5,8 +5,8 @@
     left:0;
     width: 100%;
     z-index: -1;
-    height:300px;
-    background-color: var(--accent-color-1);
+    height:240px;
+    background-color: var(--primary-color);
     min-height:auto;
     max-height: none;
     padding: 30px;
@@ -18,20 +18,23 @@
     display: flex;
     flex-direction: column;
     gap:20px;
+    margin-top: 20px;
     color:var(--primary-color)
 }
 .f-s{
     font-size:var(--font-size-xl-2);
     font-weight: 600;
     line-height: 60%;
+    color: var(--secondary-color);
 
 }
 
 .f-s2{
     margin-left: 15px;
-    font-size:10px;
+    font-size:12px;
     font-weight: 400;
-    opacity: 0.5;
+    opacity: 1;
+    color: var(--secondary-color);
 
 }
 

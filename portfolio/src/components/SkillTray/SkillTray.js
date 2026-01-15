@@ -9,7 +9,7 @@ const images = props.icons.map(image => {
     });
   return (
     <div className="skilltray-div">
-        <span className='size-xs font1'>
+        <span className='text-[18px]'>
             {props.title}:
         </span>
         <div className='icontray-div'>

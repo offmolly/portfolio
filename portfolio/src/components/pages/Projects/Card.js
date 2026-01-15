@@ -14,7 +14,7 @@ import {motion, useInView } from 'framer-motion'
 const cardVariants = {
     hidden:{
         opacity:0.4,
-        y:50,
+        y:0,
         transition:{
             duration:0.4,
             ease:'easeInOut'
@@ -36,7 +36,7 @@ const cardVariants = {
     },
     visible:{
         opacity:1,
-        y:0,
+        y:-20,
         transition:{
             duration:0.4,
             ease:'easeInOut'

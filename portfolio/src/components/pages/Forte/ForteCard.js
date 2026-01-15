@@ -11,10 +11,10 @@ const ForteCard = (props) => {
     const isInView = useInView(cardref,{margin:'-40% 0px -40% 0px'})
   return (
     <motion.div  ref={cardref} className='fortecard-main' style={isInView?{color:'white'}:{color:'var(--tertiary-color)'}}>
-      <motion.div data-scroll data-scroll-speed='0.03' ref={cardIconRef} className='forte-icon-div'>
-        <ForteSvg name={props.name}/>
+      <motion.div data-scroll data-scroll-speed='0.02' ref={cardIconRef} className='forte-icon-div'>
+        <ForteSvg name={props.name}/> 
       </motion.div>
-      <p>
+      <p  data-scroll data-scroll-speed='0.01' className='mt-[20px]'>
         {props.text}
       </p>
     </motion.div>

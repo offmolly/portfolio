@@ -5,12 +5,13 @@
 
 #about{
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: var(--secondary-color);
-    padding-top: 10px;
+    padding-top: 70px;
     gap:20px;
-    min-height: 820px;
-    height:130vh;
+    padding-bottom: 200px;
+    box-shadow: 10px 10px 70px black;
+    height: auto !important;
   }
 
 .about-h{
@@ -52,6 +53,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap:var(--about-gap);
+    margin-top: 50px;
 }
 
 .about-txt{
@@ -83,11 +85,12 @@
 
 .f-h{
     position: absolute;
-    background-color: var(--primary-color);
-    height: 100px;
-    width:220px;
-    bottom:-280px;
-    left:40px;
+    background-color: var(--secondary-color);
+    /* padding:20px;
+    padding-inline: 38px; */
+    border-radius: 12px;
+    bottom:-150px;
+    right:80px;
     display: flex;
     justify-content: center;
     align-items: center;

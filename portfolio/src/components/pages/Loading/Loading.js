@@ -22,9 +22,6 @@ function Loading(props) {
           <div className="ld-lg-div">
             <motion.img style={{opacity:opacity1}}  transition={{ease:'linear',duration:0.2}} className="ld-lgo" src="static/images/logo.svg" alt="" />
           </div>
-          <motion.div style={{color,opacity:opacity1}} className='load-num font1'>
-            {rounded}
-          </motion.div>   
         </div>  
     </motion.div>
   )

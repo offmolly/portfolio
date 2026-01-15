@@ -1,3 +1,4 @@
+
 :root{
   /*cursor*/
   --cursor: url('./cursor.png'),auto;
@@ -23,7 +24,7 @@
   --font-size-xxs:1em;
   --font-size-xs:1.1em;
   --font-size-xs-1:1.3em;
-  --font-size-s:2em;
+  --font-size-s:20px;
   --font-size-m:2.5em;
 
   --font-size-l:4.5em;
@@ -221,7 +222,7 @@ body{
 }
 .ld-lgo{
   position: absolute;
-  top:-80px;
+  top:-40px;
   height: 200px;
 }
 #loading{

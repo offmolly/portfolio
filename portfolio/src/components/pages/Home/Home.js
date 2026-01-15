@@ -30,9 +30,6 @@ export default function Home(props) {
       <motion.section ref={homeRef} className='page' id="home">
         <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:2,ease:'circInOut'}}}className='noise'>
         <img className='noise-image' src="/static/images/Noise.png" alt="noise filter"/>
-        {ShowTopBtn && (
-            <TopButton/>
-          )}
       </motion.div>
       
           <div className='home-head'>
