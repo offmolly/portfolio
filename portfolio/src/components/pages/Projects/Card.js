@@ -106,14 +106,14 @@ const Card = (props) => {
                             <motion.div variants={cardVariants} initial="nooverlay" animate={isinview?"overlay":""} className='card-overlay'/>
                             <motion.div variants={cardVariants} initial="linkhidden" animate={isinview?"linkvisible":""} className="crd-link-div">
                                 <span className='font-1'>Github</span>
-                                <img src="/static/images/link.svg" alt="external link icon"/>
+                                <img src={`${process.env.PUBLIC_URL}/static/images/link.svg`} alt="external link icon"/>
                             </motion.div>
                             
                         </>
                     )}
                     </>
                 )}
-                <img src={`/static/images/${props.projectname}.png`} alt={`${props.projectname}`} />
+                <img src={`${process.env.PUBLIC_URL}/static/images/${props.projectname}.png`} alt={`${props.projectname}`} />
             </div>
 
             <div className="info-div">

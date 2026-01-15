@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 function SkillTray(props) {
 
 const images = props.icons.map(image => {
-    return <motion.img key={image} src={`/static/images/${image}.svg`} alt={`${image} icon`}/>
+    return <motion.img key={image} src={`${process.env.PUBLIC_URL}/static/images/${image}.svg`} alt={`${image} icon`}/>
     });
   return (
     <div className="skilltray-div">

@@ -22,9 +22,9 @@ function SocialTray() {
 
   return (
        <motion.div data-scroll data-scroll-speed='0.05' variants={animationVariant} initial="hidden" animate="visible" className="connect-div">
-            <LinkButton animationVariant={animationVariant} target={true} src={'/static/images/git-icon.svg'} linkto={'https://github.com/offmolly'} alt={'github'}/>
-            <LinkButton animationVariant={animationVariant} target={true} src={'/static/images/mail.svg'} linkto={'mailto:pranayrpublic@gmail.com'} alt={'mail'}/>
-            <LinkButton animationVariant={animationVariant} target={true} src={'/static/images/linkedin.svg'} linkto={'https://linkedin.com/in/pranay-r-public'} alt={'linkedin'}/>
+            <LinkButton animationVariant={animationVariant} target={true} src={`${process.env.PUBLIC_URL}/static/images/git-icon.svg`} linkto={'https://github.com/offmolly'} alt={'github'}/>
+            <LinkButton animationVariant={animationVariant} target={true} src={`${process.env.PUBLIC_URL}/static/images/mail.svg`} linkto={'mailto:pranayrpublic@gmail.com'} alt={'mail'}/>
+            <LinkButton animationVariant={animationVariant} target={true} src={`${process.env.PUBLIC_URL}/static/images/linkedin.svg`} linkto={'https://linkedin.com/in/pranay-r-public'} alt={'linkedin'}/>
         </motion.div> 
   )
 }

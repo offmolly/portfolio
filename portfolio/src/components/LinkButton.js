@@ -13,6 +13,8 @@ function LinkButton(props) {
     }
   },[props])
 
+  console.log(props.src)
+
   return (
     <motion.div variants={props.animationVariant} className="link-bttn">
         <Link tabIndex={0} to={props.linkto} target={props.target?"_blank":""}>

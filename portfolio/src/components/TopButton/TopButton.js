@@ -10,7 +10,7 @@ function TopButton() {
   }
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} style={{position:'absolute',bottom:'30px',right:'40px',zIndex:'999',pointerEvents:'all'}} onClick={handleTopClick}>
-        <LinkButton linkto={'/'} target={false} topbtn={true} src='/static/images/arrow.svg' alt="top icon"/>
+        <LinkButton linkto={'/'} target={false} topbtn={true} src={`${process.env.PUBLIC_URL}/static/images/arrow.svg`} alt="top icon"/>
     </motion.div>
   )
 }
