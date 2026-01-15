@@ -1,0 +1,33 @@
+.skilltray-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    width: var(--about-width);
+    color:var(--primary-color);
+    height: 140px;
+}
+
+.icontray-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    gap: 25px;
+    width: 227px;
+    height:fit-content;
+}
+.skill-img-div{
+    position: relative;
+
+}
+.skill-context{
+    position:relative;
+    background-color: white;
+    color:black;
+    font-size: 12px;
+    z-index: 99;
+}

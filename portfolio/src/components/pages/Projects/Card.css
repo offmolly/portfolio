@@ -1,0 +1,206 @@
+.card-main-div{
+    position: relative;
+    width: 370px;
+    height: 602px;
+    display:flex;
+    justify-content: center;
+    cursor: var(--cursor-pointer);
+}
+
+.card-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+    width: 339px;
+    height: 488px;
+    border-radius: 30px;
+    z-index: 3;
+    position:absolute;
+    top:10px;
+}
+
+.img-div{
+    width: 339px;
+    height: 253px;
+    border-radius: 30px;
+    overflow: hidden;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card-overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+
+}
+.wip{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    z-index: 2;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 600;
+    color:white;
+    font-size: 24px;
+}
+
+.img-div img{
+    width: 339px;
+    height: 260px;
+    object-fit:cover;
+    opacity: 0.7;
+}
+
+.crd-link-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px 15px;
+    background-color:var(--primary-color);
+    position: absolute;
+    z-index: 2;
+    gap:10px;
+}
+
+.crd-link-div span{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.crd-link-div img{
+    height: 16px;
+    width: 16px;
+}
+
+.info-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 29px;
+    width:100%;
+    height: fit-content;
+}
+
+.details-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+}
+
+.prj-nm{
+    margin: 0;
+    width: 100%;
+    height: 45px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    color:var(--misc-color-1);
+
+}
+
+.prj-det{
+    margin:0;
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color:var(--misc-color-1);
+    opacity: 0.6;
+    letter-spacing:1px;
+
+}
+
+.skill-used-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 7px;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.skill-tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px;
+    gap: 10px;
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: 5px;
+}
+
+.skill-tag-txt{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--accent-color-1)
+}
+
+.card-main-div svg:nth-child(2){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.card-main-div svg:nth-child(3){
+    position: absolute;    
+    left: 12px;
+    top: 28px;
+    z-index: 1;
+
+}
+.card-main-div svg:nth-child(4){
+    position: absolute;
+    left: 26px;
+    top: 65px;
+    z-index: 0;
+}
+
+.scheme1 svg path{
+    fill:var(--secondary-color)
+}
+.scheme1 svg:nth-child(2) path{
+    fill:var(--primary-color)
+}
+
+.scheme2 svg path{
+    fill:var(--misc-color)
+    
+}
+.scheme2 svg:nth-child(2) path{
+    fill:var(--primary-color)
+}
+

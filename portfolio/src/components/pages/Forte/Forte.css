@@ -1,0 +1,202 @@
+.forte{
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-height: none;
+    background-color: var(--primary-color);
+    padding:90px 50px;
+    padding-top:150px;
+    padding-bottom: 200px;
+    max-width: 1730px;
+    min-width: var(--site-min-width);
+    margin:auto;
+    box-sizing: border-box;
+}
+
+.forte-h-div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.forte-h-div h1{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--accent-color-1);
+    margin-bottom: 120px;
+}
+
+.forte-main{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+    gap:150px;
+}
+
+
+.forte-div{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15%;
+    row-gap: 210px;
+}
+
+.fortecard-main{
+    height: 190px;
+    width:410px;
+    flex:none;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    color: var(--tertiary-color);
+    transition: color 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.fortecard-main p{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    ;
+}
+
+.forte-icon-div{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.forte-icon-div svg{
+    height:65px;
+}
+
+.forte-icon-div svg path{
+    fill:var(--secondary-color);
+}
+
+@media screen and (min-width:1550px){
+    .forte-icon-div svg{
+        height:auto;
+    }
+    .fortecard-main{
+        height: 220px;
+        width:450px;
+    }
+    .fortecard-main p{
+        font-size: 26px;
+    }
+
+}
+
+@media screen and (max-width:1150px){
+    .forte-icon-div svg{
+        height: 50px;
+    }
+    .fortecard-main{
+        width:360px;
+        height:160px
+    }
+    .fortecard-main p{
+        font-size: 22px;
+    }
+    .forte-div{
+        column-gap: 15%;
+        row-gap: 140px;
+    }
+}
+
+@media screen and (max-width:965px){
+    .forte-div{
+        column-gap: 8%;
+    }
+}
+
+@media screen and (max-width:885px){
+    .forte-icon-div svg{
+        height: 40px;
+    }
+    .fortecard-main{
+        width:310px;
+        height:140px
+    }
+    .fortecard-main p{
+        font-size: 18px;
+    }
+    .forte-div{
+        column-gap: 8%;
+        row-gap: 130px;
+    }
+    .forte-h-div h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:775px){
+    .forte-icon-div svg{
+        height: 50px;
+    }
+    .fortecard-main{
+        width:360px;
+        height:160px
+    }
+    .fortecard-main p{
+        font-size: 22px;
+    }
+    .forte-div{
+        row-gap: 130px;
+    }
+    .forte-h-div h1{
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width:570px){
+    .forte-icon-div svg{
+        height: 40px;
+    }
+    .fortecard-main{
+        width:310px;
+        height:140px
+    }
+    .fortecard-main p{
+        font-size: 18px;
+    }
+    .forte-div{
+        row-gap: 100px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .forte-icon-div svg{
+        height: 35px;
+    }
+    .fortecard-main{
+        width:280px;
+        height:120px
+    }
+    .fortecard-main p{
+        font-size: 17px;
+    }
+    .forte-div{
+        row-gap: 120px;
+    }
+}

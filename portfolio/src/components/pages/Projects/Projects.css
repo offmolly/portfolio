@@ -1,0 +1,155 @@
+.project-page{
+    margin: auto;
+    padding:0px 0px 0px 0px;
+    gap:var(--page-comp-gap);
+    box-sizing:border-box;
+    max-width:1728px;
+    min-height: 670px;
+    background-color: var(--primary-color);
+    
+}
+.project-wrap{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    min-height: 480px;
+    max-height: 1120px;
+    overflow: hidden;
+}
+
+.project-main{
+    padding-left: 90px;
+    display:flex;
+    flex-direction: column;
+    gap:180px;
+}
+
+.p-h-div{
+    width: 520px;
+    font-family: 'Lexend';
+    color: var(--tertiary-color);
+    opacity: 0.9;
+    display:flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+#mtxt{
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 110%;
+}
+
+.view-more-div{
+    width:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.view-more-icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.view-more-div span{
+    display:block;
+    width: 166px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--secondary-color)
+}
+
+.view-more-div svg path{
+    stroke: white;
+}
+
+#subtxt{
+    font-size:24px;  
+}
+
+.navigator-div{
+    display: flex;
+    gap:60px;
+}
+.navigator-svg{
+    fill:var(--accent-color-1);
+    transition:var(--transition-1);
+   
+}
+
+.navigator:hover{
+    cursor: var(--cursor-pointer);
+    .navigator-svg{
+        fill:var(--secondary-color);
+    }
+}
+
+.key2{
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:1000px){
+    .project-main{
+        padding-left: 50px;
+    }
+    .p-h-div{
+        width:425px;
+    }
+    #mtxt{
+        font-size: 58px;
+    }
+    #subtxt{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .project-main{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:460px){
+    .p-h-div{
+        width:340px;
+    }
+    #mtxt{
+        font-size: 42px;
+    }
+    #subtxt{
+        font-size: 16px;
+    }
+   
+    .view-more-div span{
+        width:130px;
+        font-size: 16px;
+    }
+    .view-more-div svg:nth-child(1){
+        width:20px;
+        height:28px;
+    }
+    .view-more-div svg:nth-child(2){
+        width:18px;
+        height:22px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .p-h-div{
+        width:280px;
+    }
+    #mtxt{
+        font-size: 36px;
+    }
+}

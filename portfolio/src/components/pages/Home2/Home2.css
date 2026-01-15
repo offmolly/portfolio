@@ -1,0 +1,137 @@
+:root{
+    --home2-height: 115vw;
+}
+
+#home2{
+    height: var(--home2-height);
+    max-height: 1800px; 
+    padding-top: 130px;
+    padding-left: 140px;
+    padding-right: 140px;
+    background-color: var(--secondary-color);
+    background-image:var(--bg);
+    background-blend-mode:darken;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    min-height: 550px;
+    gap:50px;
+
+}
+
+
+
+.home2-title-div{
+    width: 82vw;
+    height:fit-content;
+}
+
+.home2-title-div span{
+    width:100%;
+    
+}
+
+#dev{
+    font-family: 'Lexend';
+    font-weight: 700;
+    /* font-size:170px; */
+    font-size: 12vw;
+    line-height: 100%;
+    color:var(--accent-color-1);
+}
+
+#des{
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 180px; */
+    font-size: 14vw;
+    text-align: right;
+    color:var(--secondary-color);
+}
+
+.home2-div2{
+    max-width: 280px;
+    width: 8vw;
+    position: absolute;
+    /* left: 1211px; */
+    left:78vw;
+    top: 62.5%;
+}
+
+.home2-div2 span{    
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vw;
+    line-height: 4.5vw;
+    color: var(--secondary-color);
+    mix-blend-mode:lighten;
+}
+
+@media screen and (min-width:1510px) {
+    #home2{
+        gap:10px;
+    }
+    .home2-title-div{
+        width: 100%;
+    }
+    #des{
+        font-size: 210px;
+    }
+    #dev{
+        font-size:190px;;
+    }
+    .home2-div2{
+        width: 280px;
+        left: 1230px;
+        top: 1123px;
+    }
+    .home2-div2 span{
+        font-size: 56px;
+        line-height: 60px;
+    }
+   
+    
+}
+
+@media screen and (max-width:1000px) {
+    #home2{
+        padding-left:80px;
+        padding-right:80px;
+    }       
+}
+
+@media screen and (max-width:760px) {
+    #home2{
+        padding-top: 60px;
+        padding-left:50px;
+        padding-right:50px;
+    }       
+}
+
+@media screen and (max-width:570px) {
+    #home2{
+      padding: 0px 20px 0px 20px;
+    }
+  }
+
+@media screen and (max-width:330px){
+    #des{
+        font-size: 40px;
+    }
+    #dev{
+        font-size:39px;;
+    }
+    .home2-div2 span{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
+    .home2-title-div{
+        width: 270px;
+    }
+   
+}

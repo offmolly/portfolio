@@ -1,0 +1,37 @@
+.alert-scrl-div{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:6px;
+    width:100%;
+    height: fit-content;
+    position: absolute;
+    box-sizing: border-box;
+    top:0px;
+    left:0px;
+    background-color: var(--accent-color-1);
+    overflow: hidden;
+}
+.alert-carousel-div{
+    display:flex;
+
+}
+.alert-scrl-main p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 600;
+
+}
+
+.alert-scrl-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    min-width: fit-content;
+    gap:36px;
+    flex-direction: row;
+    padding:0px 18px;
+    box-sizing: border-box;
+}

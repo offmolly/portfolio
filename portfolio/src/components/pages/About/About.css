@@ -1,0 +1,258 @@
+:root{
+    --about-width:420px;
+    --about-gap:60px;
+}
+
+#about{
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--secondary-color);
+    padding-top: 10px;
+    gap:20px;
+    min-height: 820px;
+    height:130vh;
+  }
+
+.about-h{
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 120px;
+    font-weight: 600;
+    color:white;
+    mix-blend-mode: soft-light;
+
+}
+.stack-img{
+    position: absolute;
+    right: 200px;
+    top: 80px;
+}
+
+.about-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    width:80%;
+    height:100%;
+}
+
+.about-div{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    gap:33px;
+    color: var(--primary-color);    
+}
+.about-sec{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:var(--about-gap);
+}
+
+.about-txt{
+    margin: 0;
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}
+
+.desc-div{
+    width:var(--about-width);
+    min-width: var(--about-width);
+  }
+  
+.desc-txt{
+    margin: 0;
+    font-size: var(--font-size-s);
+    font-weight: 500;
+  }
+
+
+.skill-div{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:var(--about-gap);
+    font-size: 18px;
+}
+
+.f-h{
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 100px;
+    width:220px;
+    bottom:-280px;
+    left:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mailme{
+    cursor: var(--cursor-pointer);
+    color:white;
+    font-size: 45px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-1);
+    font-weight: 700;
+}
+#mailme label{
+    cursor:var(--cursor-pointer);
+}
+#mailme:hover{
+    color:var(--secondary-color)
+}
+
+@media screen and (max-width:1310px) {
+    .desc-txt{
+        font-size: 24px;
+      } 
+}
+
+
+@media screen and (max-width:1310px) {
+    .desc-txt{
+        font-size: 24px;
+      } 
+       
+   
+}
+@media screen and (max-width:1250px) {
+    :root{
+        --about-width:340px;
+    }
+    .desc-txt{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:1011px) {
+    .about-main{
+        width:100%;
+    }
+    .about-txt{
+        font-size: 28px;
+    }
+
+}
+
+
+@media screen and (max-width:930px) {
+    .f-h{
+          bottom:-250px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+   .about-txt{
+    font-size: 22px;
+   }
+   .desc-txt{
+    font-size: 20px;
+   }
+   .skill-div{
+    font-size: 16px;
+   }
+   :root{
+    --about-width:300px;
+    --about-gap:30px;
+}
+   
+}
+
+@media screen and (max-width:700px) {
+    #about{
+        min-height: 930px;
+    }
+    :root{
+        --about-gap:20px;
+        --about-width:240px
+    }    
+    .f-h{
+        bottom:-240px;
+        left:15px;
+        
+    } 
+}
+
+
+@media screen and (max-width:550px) {
+    :root{
+        --about-width:80%;
+    }
+    .desc-txt{
+        font-size: 20px;
+    }
+    .about-sec, .skill-div{
+        flex-wrap: wrap;
+    }
+    #about{
+        padding-top: 20px;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .about-div{
+        gap:30px;
+    }
+    .about-main{
+        gap:50px;
+    }
+    .about-txt{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:493px) {
+     .f-h{
+        height: 70px;
+        width:180px;
+        bottom:-250px;
+        left:15px;
+        
+    }
+    #mailme{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .about-txt{
+        font-size: 19px;
+    }
+    .desc-txt{
+        font-size: 18px;
+    }
+    .skill-div{
+        font-size: 16px;
+    }
+    .about-h{
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .about-txt{
+        font-size: 18px;
+    }
+    .desc-txt{
+        font-size: 16px;
+    }
+    .skill-div{
+        font-size: 13px;
+    }
+    .about-h{
+        font-size: 70px;
+    }
+}

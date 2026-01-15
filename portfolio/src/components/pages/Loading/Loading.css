@@ -1,0 +1,58 @@
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  border: 15px solid var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top:50px;
+  left:50px;
+  transform: rotate(45deg);
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  border: 25px solid var(--secondary-color);
+  animation: l18 4.5s linear;
+}
+@keyframes l18 {
+    0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
+}
+
+
+  @media screen and (max-width:850px) {
+    .load-num{
+      font-size: 200px;
+    }
+    
+  }
+  
+  @media screen and (max-width:640px) {
+    .loader{
+      width:60px;
+    }
+   .loader::before{
+    border:15px solid var(--secondary-color);
+   }
+    
+  }
+
+  @media screen and (max-width:500px) {
+    .load-num{
+      font-size: 100px;
+    }
+    .loader{
+      width:35px;
+    }
+   .loader::before{
+    border:12px solid var(--secondary-color);
+   }
+    
+  }
