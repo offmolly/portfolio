@@ -33,8 +33,8 @@ function Home2() {
   return (
     <motion.div style={window.innerWidth<650?{}:{y}} ref={targetRef} className='page' id='home2'>
         <motion.div className='home2-title-div'>
-            <motion.div ref={title1ref} initial={{opacity:0,y:50}} animate={title1inview?{opacity:1,y:0}:{opacity:0,y:50}} transition={{ease:'linear',duration:0.4}} id="dev">Web <br/> Developer</motion.div>
-            <motion.div initial={{opacity:0,y:70}} animate={title1inview?{opacity:1,y:0}:{opacity:0,y:70}} transition={{ease:'linear',duration:0.4}} id="des"><span>& designer</span></motion.div>
+            <motion.div ref={title1ref} initial={{opacity:0}} animate={title1inview?{opacity:1}:{opacity:0}} transition={{ease:'linear',duration:0.4}} id="dev">Web <br/> Developer</motion.div>
+            <motion.div initial={{opacity:0}} animate={title1inview?{opacity:1}:{opacity:0}} transition={{ease:'linear',duration:0.4}} id="des"><span>& designer</span></motion.div>
         </motion.div>
         {/* <div data-scroll data-scroll-speed='0.1' className='home2-div2'>
             <span>Creating visually engaging, intuitive webapps.</span>

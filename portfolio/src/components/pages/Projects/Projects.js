@@ -41,15 +41,16 @@ function Projects() {
   const { scrollYProgress } = useScroll({target:projectsRef});
   const x = useTransform(scrollYProgress,[0.2,1],['0%','-104.6%']);  
   const opacity = useTransform(scrollYProgress,[0,0.15],[.1,1])
+  const opacityText = useTransform(scrollYProgress,[0.18,0.35],[1,0])
   const y = useTransform(scrollYProgress,[0,0.15],[100,0]);
 
-  const widthofcarousel = `${(projects.length*420)+1200}px`;
+  const widthofcarousel = `${(projects.length*420)+800}px`;
 
   return (
     <div className="project-page" style={{height:widthofcarousel}} ref={projectsRef}>
-      <motion.div initial={{opacity:0}} style={{opacity,y}} transition={{ease:'easeOut',duration:0.7}}  className="project-wrap">
+      <motion.div style={{opacity,y}} transition={{ease:'easeOut',duration:0.7}}  className="project-wrap">
         <motion.div className="project-main">
-          <motion.div className="p-h-div">
+          <motion.div style={{opacity:opacityText}} className="p-h-div">
             <span id='mtxt'>Some <span className='bold-font highlight'>Projects</span> I've made</span><br/>
             <div className='view-more-div'>
               <span>SCROLL DOWN TO VIEW MORE</span>

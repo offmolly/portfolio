@@ -11,7 +11,7 @@ const Forte = () => {
 });
 
   const [y,setY] = useState(0);
-  const yvalue = useTransform(scrollYProgress,[0,0.7],[200,-100])
+  const yvalue = useTransform(scrollYProgress,[0,0.7],[300,-100])
   const scale = useTransform(scrollYProgress,[0,0.4],[1.2,1])
   const opacity = useTransform(scrollYProgress,[0.15,0.3],[0.1,1])
 

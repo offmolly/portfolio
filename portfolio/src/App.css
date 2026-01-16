@@ -166,7 +166,7 @@ body{
   max-height: 1120px;
   width: 100%;
   min-width: var(--site-min-width);
-  max-width: 1730px;
+  max-width: 1920px;
   padding:50px 90px 0px 90px;
   gap:var(--page-comp-gap);
   box-sizing:border-box;

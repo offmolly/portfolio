@@ -101,7 +101,7 @@ const Card = (props) => {
                 )}
                 {!props.wip && (
                     <>
-                    {showLink && (
+                    {/* {showLink && (
                         <>
                             <motion.div variants={cardVariants} initial="nooverlay" animate={isinview?"overlay":""} className='card-overlay'/>
                             <motion.div variants={cardVariants} initial="linkhidden" animate={isinview?"linkvisible":""} className="crd-link-div">
@@ -110,7 +110,7 @@ const Card = (props) => {
                             </motion.div>
                             
                         </>
-                    )}
+                    )} */}
                     </>
                 )}
                 <img src={`${process.env.PUBLIC_URL}/static/images/${props.projectname}.png`} alt={`${props.projectname}`} />
